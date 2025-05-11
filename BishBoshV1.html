@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bish-Bosh ver. 1</title>
+    <script>
+      let bish = 3
+      let bosh = 4
+      let limit = 100
+
+      for (let i = 1; i <= limit; i++) {
+        let out = i
+        if (i % bish === 0) {
+          out = 'Bish'
+          if (i % bosh === 0) {
+            out += '-Bosh'
+          }
+        } else if (i % bosh === 0) {
+          out = 'Bosh'
+        }
+        console.log(out)
+      }
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
